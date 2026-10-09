@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse available TabataPass packages." />
+  <title>Available Packages | TabataPass</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="packages">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Tabata<span>Pass</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html" data-page="home">Home</a>
+        <a href="buy.html" data-page="buy">Buy Key</a>
+        <a href="packages.html" data-page="packages">Packages</a>
+        <a href="ask.html" data-page="ask">Ask a Question</a>
+        <a href="announcements.html" data-page="announcements">Announcements</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <h1 class="page-title">Subjects Available</h1>
+    <p class="page-subtitle">Select a Subject package below to view what it contains. More packages will be added soon.</p>
+
+    <div class="card">
+      <div class="package-select-wrap">
+        <label for="package-select">Choose a Subject</label>
+        <select id="package-select" class="select-custom" aria-describedby="package-help">
+          <option value="">— Select a subject —</option>
+          <option value="tpass-shs-core-f1-s1">TPass - SHS Core Form1 Sem1</option>
+          <!-- Add more <option> entries here as packages become available -->
+        </select>
+        <p id="package-help" style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.4rem;">
+          New Subject Packages is added to this list at any time.
+        </p>
+      </div>
+
+      <div id="package-info" class="package-info">
+        <h3 id="package-name"></h3>
+        <p id="package-desc"></p>
+        <div class="meta">
+          <span id="pkg-level"></span>
+          <span id="pkg-semester"></span>
+          <span id="pkg-type"></span>
+        </div>
+        <div class="mt-2">
+          <a href="buy.html" class="btn btn-primary">Get Activation Key</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 TabataPass. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
